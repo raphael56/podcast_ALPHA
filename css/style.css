@@ -1,0 +1,138 @@
+.kaushan {
+  font-family: "Kaushan script", sans-serif;
+}
+
+nav {
+  height: 100px;
+}
+
+.logo-nav-container {
+  width: 70px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  z-index: 99999;
+  top: 0px;
+  left: 15px;
+}
+
+.titre_general {
+  font-family: 'Comforter', cursive, Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 50%;
+  margin-top: 40px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99999;
+  font-family: sans-serif;
+}
+
+.btn-accueil {
+  margin: 13px auto;
+}
+
+.podcast-menu {
+  display: block;
+  right: 30px;
+  padding-right: 100px;
+}
+
+.home {
+  margin: 300px 0 0 0;
+  height: 70vh;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    margin: 100px 10px 0;
+  }
+  .btn-accueil {
+    margin: 50px 0 0 0;
+  }
+  .btn-transition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.section-galerie-podcast {
+  margin-top: 100px;
+}
+
+audio {
+  background: -webkit-gradient(linear, left top, right top, from(#0f1f39), color-stop(#fefee6), to(#a8302c));
+  background: linear-gradient(to right, #0f1f39, #fefee6, #a8302c);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.section-banniere-drapeau {
+  background: url("../ressources/images/drapeau.jpg");
+  position: -webkit-sticky;
+  position: sticky;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-banniere-drapeau .btn-more-drapeau {
+  margin-top: 300px;
+}
+
+#more_drapeau {
+  height: 90vh;
+}
+
+.section-banniere-augmente {
+  background: url("../ressources/images/soldat_augmente.jpeg");
+  position: -webkit-sticky;
+  position: sticky;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-cahier-RDN {
+  padding: 30px;
+  background: #2f4e7a;
+  color: honeydew;
+  margin-top: 200px;
+}
+
+.section-banniere-singularite {
+  background: url("../ressources/images/singularite.jpg");
+  position: -webkit-sticky;
+  position: sticky;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-banniere-singularite .btn-more-singularite {
+  margin-top: 300px;
+}
+
+.btn-more-singularite {
+  margin-top: 100px;
+}
+
+#more_singularite {
+  height: 90vh;
+}
+
+.section-banniere-tap {
+  background: url("../ressources/images/tap.JPG");
+  position: -webkit-sticky;
+  position: sticky;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=style.css.map */

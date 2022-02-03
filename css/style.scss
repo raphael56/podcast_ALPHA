@@ -1,0 +1,165 @@
+
+
+// font-family
+.kaushan{
+    font-family: "Kaushan script", sans-serif;
+}
+
+
+// barre de navigation
+nav{
+    height:100px;
+    
+}
+.logo-nav-container{
+    // background: linear-gradient(rgb(47,78,122), rgb(56, 73, 119));
+   width: 70px;
+   height: 200px;
+   display: block;
+   position: absolute;
+   overflow: hidden;
+   z-index: 99999;
+   top:0px;
+   left:15px;
+}
+
+
+.titre_general{
+    font-family: 'Comforter', cursive, Arial, Helvetica, sans-serif;
+    position: absolute;
+    left:50%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+    z-index: 99999;
+    font-family:  sans-serif;
+    
+
+}
+.btn-accueil{
+    margin: 13px auto;
+}
+.podcast-menu{
+    display: block;
+    right: 30px;
+    padding-right: 100px;
+}
+.home{
+    margin: 300px 0 0 0;
+    height: 70vh;}
+
+// accueil
+
+
+
+
+@media screen and (max-width:768px) {
+   
+    
+    .home{
+       
+        margin: 100px 10px 0;
+    }
+    .btn-accueil{
+        margin:50px 0 0 0;
+    }
+    .btn-transition{
+       display: flex;
+       width: 100%;
+       height: 100px;
+       justify-content: center;
+    }
+}
+
+
+
+
+ // portfolio podcast
+.section-galerie-podcast{
+    margin-top: 100px;
+}
+
+
+
+audio{
+    background: linear-gradient(to right, rgb(15, 31, 57),rgb(254, 254, 230),rgb(168, 48, 44));
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+// page podcast le drapeau
+.section-banniere-drapeau{
+  
+    
+    background: url("../ressources/images/drapeau.jpg");
+    position: sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .btn-more-drapeau{
+        margin-top: 300px;
+    }
+}
+
+#more_drapeau{
+
+
+    height: 90vh;
+ ;
+
+}
+
+
+
+// page podcast soldat augmente
+.section-banniere-augmente{
+  
+    
+    background: url("../ressources/images/soldat_augmente.jpeg");
+    position: sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-cahier-RDN{
+    padding: 30px;
+    background: rgb(47, 78, 122);
+    color:honeydew;
+    margin-top: 200px;
+}
+
+//page podcast singularite
+.section-banniere-singularite{
+  
+    
+    background: url("../ressources/images/singularite.jpg");
+    position: sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .btn-more-singularite{
+        margin-top: 300px;
+    }
+}
+.btn-more-singularite{
+    margin-top: 100px;
+}
+#more_singularite{
+
+
+    height: 90vh;
+
+}
+//page podcast tap
+.section-banniere-tap{
+  
+    
+    background: url("../ressources/images/tap.JPG");
+    position: sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
