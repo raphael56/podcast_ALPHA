@@ -19,15 +19,16 @@
 
     <!-- section NAVBAR -->
 
-    <nav class="navbar  is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar  is-fixed-top is-shadowless" role="navigation" aria-label="main navigation">
         <div class="logo-nav-container">
             <a href="https://portail.st-cyr.terre.defense.gouv.fr/uPortal/f/u161l1s16/normal/render.uP">
 
-                <img src="ressources/images/LOGO_AMSCC.png" alt="" class="image-logo">
+                <img src="ressources/images/Logo_AMSCC.png" alt="" class="image-logo">
             </a>
         </div>
-        <h1 class="kaushan titre_general title has-text-centered  is-underlined is-size-4-touch is-size-2-desktop"> Les
-            podcasts Alpha</h1>
+        <h1 class="kaushan titre_general title has-text-centered is-size-5-mobile is-size-2-tablet is-size-2-desktop"> <a href="index.html" ><span class="icon is-size-2-tablet is-size-2-desktop">
+            <i class="fas fa-podcast"></i>
+        </span><span>Les Podcasts Alpha</span> </a> </h1>
         <div class=" navbar-brand is-hidden-widescreen is-hidden-desktop is-hidden-fullhd ">
             <a class="navbar-item is-touch-only" href="#">
                 <!-- <img class="image is-256x256"src="ressources/images/logo-ministere-2020.png" alt="logo"> -->
@@ -80,6 +81,9 @@
                     <a class=" navbar-item is-size-6-mobile" href="page4.html">
                         Les TAP
                     </a>
+                    <a class=" navbar-item is-size-6-mobile" href="page5.html">
+                        Ethique
+                    </a>
 
                 </div>
             </div>
@@ -122,7 +126,7 @@
         <div class="column  has-text-centered is-7-mobile is-flex is-hidden-touch">
             <figure class="image">
 
-                <img src="ressources/images/podcast.png" alt="img accueil">
+                <img class="img-micro" src="ressources/images/podcast.png" alt="img accueil">
 
             </figure>
         </div>
@@ -213,7 +217,7 @@
                         <div class="media">
                             <div class="media-content">
                                 <p class="title is-4">La singularité militaire</p>
-                                <p class="subtitle is-6">Interview du général de division Patrick Collet</p>
+                                <p class="subtitle is-6">Interview du Général de Division Patrick Collet</p>
                             </div>
                         </div>
                         <hr>
@@ -251,6 +255,30 @@
 
                         </div>
                         <button class="js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-tap"><span
+                                class="icon is-small">
+                                <i class="fas fa-play"></i>
+                            </span><span>ecouter</span> </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ethique card-->
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image"><img src="ressources/images/ethic.jpg" alt="logo carte sass"></figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">L'éthique militaire</p>
+                                <p class="subtitle is-6">Interview du ???????</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content has-text-right">L'éthique militaire Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, necessitatibus!
+
+                        </div>
+                        <button class="js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-ethic"><span
                                 class="icon is-small">
                                 <i class="fas fa-play"></i>
                             </span><span>ecouter</span> </button>
@@ -305,7 +333,7 @@
 
             <div class="modal-content ">
                 <div class="box">
-                    <p class="title is-1 block is-centered is-narrow">La singularité militaire</p>
+                    <p class="title is-1 block is-centered is-narrow">Le soldat augmenté</p>
                     <figure class="image is-rounded box">
 
                         <img class="image " src="ressources/images/soldat_augmente.jpeg" alt="soldat augmenté">
@@ -380,10 +408,44 @@
 
             <div class="modal-content ">
                 <div class="box">
-                    <p class="title is-1 block is-centered is-narrow">La singularité militaire</p>
+                    <p class="title is-1 block is-centered is-narrow">Les troupes aéroportées</p>
                     <figure class="image is-rounded box">
 
                         <img class="image " src="ressources/images/tap.JPG" alt="drapeau français">
+                    </figure>
+
+                    <audio controls src="ressources/podcast/PODCAST_TAP.mp3" type="audio/mp3">test</audio>
+
+
+                    <a class="button box is-primary is-rounded" href="">
+                        <span>
+
+                            <i class="fas fa-parachute-box"></i>
+                        </span>
+                        <span>
+                            pour aller plus loin
+                        </span>
+
+                    </a>
+
+
+                </div>
+            </div>
+
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <!-- ethic -->
+
+
+        <div id="modal-js-ethic" class="modal has-text-centered">
+            <div class="modal-background"></div>
+
+            <div class="modal-content ">
+                <div class="box">
+                    <p class="title is-1 block is-centered is-narrow">L'éthique militaire</p>
+                    <figure class="image is-rounded box">
+
+                        <img class="image " src="ressources/images/ethic.jpg" alt="travailleur qui noue sa cravate">
                     </figure>
 
                     <audio controls src="ressources/podcast/PODCAST_TAP.mp3" type="audio/mp3">test</audio>

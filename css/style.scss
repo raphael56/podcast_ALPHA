@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Kaushan+Script&family=Yellowtail&display=swap');
 // font-family
 .kaushan{
     font-family: "Kaushan script", sans-serif;
@@ -9,12 +8,14 @@
 // barre de navigation
 nav{
     height:100px;
+    background: linear-gradient(to right,rgba(63, 104, 167, 0.5), rgba(157, 165, 178, 0.3),rgba(214, 16, 27,0.5));
     
 }
 .logo-nav-container{
     // background: linear-gradient(rgb(47,78,122), rgb(56, 73, 119));
-   width: 70px;
-   height: 200px;
+  
+   width: 75px;
+   height: 90px;
    display: block;
    position: absolute;
    overflow: hidden;
@@ -25,13 +26,14 @@ nav{
 
 
 .titre_general{
-    font-family: 'Comforter', cursive, Arial, Helvetica, sans-serif;
+    font-family: 'Comforter';
     position: absolute;
     left:50%;
     margin-top: 40px;
     transform: translateX(-50%);
     z-index: 99999;
-    font-family:  sans-serif;
+    
+
     
 
 }
@@ -70,7 +72,10 @@ nav{
     }
 }
 
-
+.img-micro{
+    border-radius: 50px;
+    padding-right: 10px;
+}
 
 
  // portfolio podcast
@@ -156,6 +161,18 @@ audio{
   
     
     background: url("../ressources/images/tap.JPG");
+    position: sticky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+//page podcast ethic
+.section-banniere-ethic{
+  
+    
+    background: url("../ressources/images/ethic.jpg");
     position: sticky;
     background-repeat: no-repeat;
     background-size: cover;
