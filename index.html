@@ -95,18 +95,18 @@
     </div>
     <div class="columns " id="accueil">
 
-        <div class="column  is-6-desktop is-12-mobile ">
+        <div class="column  is-6-desktop is-12-mobile bg-active">
 
-            <section class=" container home">
-                <div class="container">
-                    <div class=" container has-text-centered ">
-                        <span class="icon is-size-1">
-                            <i class="fas fa-podcast"></i>
+            <section class=" container home ">
+                <div class="container ">
+                    <div class=" container has-text-centered " >
+                        <span class="icon is-size-1" id="podcast-icon">
+                            <i class="fas fa-podcast" ></i>
                         </span>
-                        <h2 class="subtitle">Bienvenue dans la section PODCAST</h2>
-                        <h1 class="title is-1">Choississez le podcast </h1>
-                        <h2 class="subtitle is-2">que vous voulez écouter !</h2>
-                        <a href="#listPodcast"><button class="button is-rounded is-large">
+                        <h2 class="subtitle" id="titre1">Bienvenue dans la section PODCAST</h2>
+                        <h2 class="title is-1" id="titre2">Choississez le podcast </h2>
+                        <h2 class="subtitle is-2" id="titre3">que vous voulez écouter !</h2>
+                        <a href="#listPodcast" ><button id="button_bonne_ecoute" class="button is-rounded is-large" >
                                 <span>
                                     Bonne écoute
                                 </span>
@@ -122,7 +122,7 @@
         <div class="column  has-text-centered is-7-mobile is-flex is-hidden-touch">
             <figure class="image">
 
-                <img class="img-micro" src="ressources/images/podcast.png" alt="img accueil">
+                <img class="img-micro" src="ressources/images/podcast.png" alt="img accueil" id="img-micro">
 
             </figure>
         </div>
@@ -132,13 +132,13 @@
 
     <!-- section galerie podcast -->
     <section class="section-galerie-podcast container" id="listPodcast">
-        <h2 class="title is-1 has-text-centered kaushan">PODCAST</h2>
+        <h2 class="title is-1 has-text-centered kaushan titrePodcast">PODCAST</h2>
 
         <div class="columns is-multiline is-centered is-mobile is-hoverable">
 
             <!-- drapeau card -->
             <div class="column is-8-mobile is-4-tablet is-4-desktop">
-                <div class="card">
+                <div class="card vague1">
                     <div class="card-image">
                         <figure class="image is-4by3"><img src="ressources/images/drapeau.jpg" alt="logo carte sass">
                         </figure>
@@ -155,7 +155,7 @@
                         <div class="content has-text-right">L’origine du drapeau tricolore date de la Révolution française de 1789. Néanmoins, l’association du bleu, du blanc et du rouge est bien antérieure à cette période en France.
 
                         </div>
-                        <button class="js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-drapeau"><span class="icon is-small">
+                        <button class="btn-listen js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-drapeau"><span class="icon is-small">
                                 <i class="fas fa-play"></i>
                             </span><span>ecouter</span> </button>
 
@@ -167,7 +167,7 @@
             <!-- soldat augmenté card -->
 
             <div class="column is-8-mobile is-4-tablet is-4-desktop">
-                <div class="card">
+                <div class="card vague1">
                     <div class="card-image">
                         <figure class="image "><img src="ressources/images/soldat_augmente.jpeg" alt="logo carte sass">
                         </figure>
@@ -188,7 +188,7 @@
 
                         </div>
 
-                        <button class="js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-augmented"><span class="icon is-small">
+                        <button class="btn-listen js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-augmented"><span class="icon is-small">
                                 <i class="fas fa-play"></i>
                             </span><span>ecouter</span> </button>
 
@@ -197,7 +197,7 @@
             </div>
             <!-- singularité card -->
             <div class="column is-8-mobile is-4-tablet is-4-desktop">
-                <div class="card">
+                <div class="card vague1">
                     <div class="card-image">
                         <figure class="image"><img src="ressources/images/singularite.jpg" alt="logo carte sass">
                         </figure>
@@ -219,7 +219,7 @@
                             </span>
 
                         </div>
-                        <button class="js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-singularite"><span class="icon is-small">
+                        <button class="btn-listen js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-singularite"><span class="icon is-small">
                                 <i class="fas fa-play"></i>
                             </span><span>ecouter</span> </button>
                     </div>
@@ -227,7 +227,7 @@
             </div>
             <!-- TAP card-->
             <div class="column is-8-mobile is-4-tablet is-4-desktop">
-                <div class="card">
+                <div class="card vague2">
                     <div class="card-image">
                         <figure class="image"><img src="ressources/images/tap.JPG" alt="logo carte sass"></figure>
                     </div>
@@ -242,7 +242,7 @@
                         <div class="content has-text-right">L'emploi des TAP
 
                         </div>
-                        <button class="js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-tap"><span
+                        <button class="btn-listen js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-tap"><span
                                 class="icon is-small">
                                 <i class="fas fa-play"></i>
                             </span><span>ecouter</span> </button>
@@ -251,7 +251,7 @@
             </div>
             <!-- Ethique card-->
             <div class="column is-8-mobile is-4-tablet is-4-desktop">
-                <div class="card">
+                <div class="card vague2">
                     <div class="card-image">
                         <figure class="image"><img src="ressources/images/ethic.jpg" alt="logo carte sass"></figure>
                     </div>
@@ -266,7 +266,7 @@
                         <div class="content has-text-right">L’éthique du combattant est au cœur de son efficacité.
 
                         </div>
-                        <button class="js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-ethic"><span
+                        <button class="btn-listen js-modal-trigger button is-rounded is-hoverable" data-target="modal-js-ethic"><span
                                 class="icon is-small">
                                 <i class="fas fa-play"></i>
                             </span><span>ecouter</span> </button>
@@ -520,6 +520,13 @@
                 });
             });
         </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>

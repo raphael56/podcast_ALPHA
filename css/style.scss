@@ -3,6 +3,9 @@
 .kaushan {
     font-family: "Kaushan script", sans-serif;
 }
+// html {
+//     scroll-behavior: smooth;
+//   }
 
 // barre de navigation
 nav {
@@ -54,6 +57,14 @@ nav {
 }
 
 // accueil
+@media screen and (max-width:1024px) {
+  .bg-active{
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(0,0,128,0.5)), 
+    url(/ressources/images/podcast.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}  
+}
 @media screen and (max-width:768px) {
     .home {
         margin: 100px 10px 0;
@@ -67,6 +78,12 @@ nav {
         height: 100px;
         justify-content: center;
     }
+    
+}
+
+#podcast-icon{
+    opacity:1;
+    color: #333;
 }
 
 .img-micro {
@@ -83,6 +100,17 @@ audio {
     background: linear-gradient(to right, rgb(15, 31, 57), rgb(254, 254, 230), rgb(168, 48, 44));
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+.btn-listen{
+    // background: #000;
+    box-shadow: 0 0 0 0 #333;
+    animation: pulse 1.3s infinite;
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.01);
+  }
 }
 
 // page podcast le drapeau

@@ -52,6 +52,15 @@ nav {
   height: 70vh;
 }
 
+@media screen and (max-width: 1024px) {
+  .bg-active {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(0, 0, 128, 0.5))), url(/ressources/images/podcast.png);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 128, 0.5)), url(/ressources/images/podcast.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home {
     margin: 100px 10px 0;
@@ -71,6 +80,11 @@ nav {
   }
 }
 
+#podcast-icon {
+  opacity: 1;
+  color: #333;
+}
+
 .img-micro {
   border-radius: 50px;
   padding-right: 10px;
@@ -85,6 +99,27 @@ audio {
   background: linear-gradient(to right, #0f1f39, #fefee6, #a8302c);
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+.btn-listen {
+  -webkit-box-shadow: 0 0 0 0 #333;
+          box-shadow: 0 0 0 0 #333;
+  -webkit-animation: pulse 1.3s infinite;
+          animation: pulse 1.3s infinite;
+}
+
+@-webkit-keyframes pulse {
+  to {
+    -webkit-box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.01);
+            box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.01);
+  }
+}
+
+@keyframes pulse {
+  to {
+    -webkit-box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.01);
+            box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.01);
+  }
 }
 
 .section-banniere-drapeau {
