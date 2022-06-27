@@ -54,8 +54,8 @@ nav {
 
 @media screen and (max-width: 1024px) {
   .bg-active {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(0, 0, 128, 0.5))), url(/ressources/images/podcast.png);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 128, 0.5)), url(/ressources/images/podcast.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(0, 0, 128, 0.5))), url(./ressources/images/podcast.png);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(0, 0, 128, 0.5)), url(./ressources/images/podcast.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
